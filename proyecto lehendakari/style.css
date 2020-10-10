@@ -1,0 +1,215 @@
+header {
+    height: 100px;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    position: fixed;
+    /* height: 50px; */
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+}
+
+p {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#logo {
+    margin: 20px;
+    cursor: pointer;
+}
+nav {
+    width: 40%;
+}
+
+nav .menuBurguer {
+    display: none;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+}
+
+nav .menuBurguer > div {
+    height: 40px;
+    width: 3px;
+    margin: 3px;
+    background-color: black;
+} 
+
+nav > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+nav > ul > li {
+    cursor: pointer;
+    /* transition: all .2s ease-in-out;  */
+}
+nav > ul > li.activo {
+    font-weight: bold;
+    /* text-decoration: overline; */
+}
+nav > ul > li:hover {
+    transform: scale(1.1);
+    /* text-decoration: overline; */
+}
+
+.slider {
+}
+
+.slider > div > ul {
+    padding: 0;
+    list-style: none;
+    display: flex;    
+    justify-content: center;
+}
+
+
+.slider > div > ul > li {
+    /* display: none; */
+    transition: all 1s ease-in-out; 
+    box-shadow: 0px 0px 10px 0px; 
+    position: absolute;
+    opacity: 0;
+}
+.slider > div > ul > li.active {
+    opacity: 1;
+}
+
+.slider > div > ul > li.slider-img > img {
+    /* width: 800px;
+    height: 350px; */
+    width: 100%;
+    height: 400px;
+}
+
+.arrow-button {
+    margin-top: 175px;
+}
+
+/* .slider .button-slider {
+    position: absolute;
+    margin-top: 125px;
+}
+
+.slider .button-slider .left-button {
+    margin-left: 30px;
+}
+
+.slider .button-slider .right-button {
+    margin-left: 850px;
+}
+
+.slider .button-proccess {
+    position: absolute;
+    margin-top: 350px;
+} */
+
+@media screen and (max-width: 800px) {
+    nav .menuBurguer {
+        display: flex;
+    }
+    nav > ul {
+        display: none;
+    }
+}
+
+main.container {
+    transition: all .2s ease-in-out; 
+}
+
+.card-service {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+img.logo-service {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.card-service > h2 {
+    align-self: center;
+    margin: 10px;
+}
+
+.card-service > p {
+    text-align: justify;
+}
+
+#servicios {
+    display: none;
+}
+
+.card-project {
+    display: flex;
+    flex-direction: column;
+}
+
+img.logo-project {
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all .5s ease-in-out; 
+    cursor: pointer;
+}
+
+img.logo-project:hover {
+    filter: grayscale(0);
+}
+
+
+.card-project > .title-project {
+    position: absolute;
+    z-index: 99;
+    display: none;
+    opacity: 0.8;
+    top: 41%;
+    width: 92%;
+    background-color: grey;
+    padding: 5px 0;
+    justify-content: center;
+    transition: all .5s ease-in-out; 
+
+}
+img.logo-project:hover + .title-project {
+    display: flex;
+    pointer-events: none;
+}
+.card-project > .title-project > h3 {
+    color: white;
+}
+
+#proyectos {
+    display: none;
+    transition: all .5s ease-in-out;
+}
+
+#proyecto {
+    display: none;
+    /* background-image: url(img/iconoRodri.jpeg); */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    width: 100%;
+    height: 75vh;
+}
+
+#proyecto > .project {
+
+}
+
+#sobreMi {
+    display: none;
+}
+
+#contacto {
+    display: none;
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rodrigo Ochoa - Arquitecto Técnico</title>
+
+    <link rel="icon" href="img/imagenProyecto.jpg">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <title>Web Rodrigo</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            Rodrigo Ochoa Barceló
+        </div>
+        <nav>
+            <div class="menuBurguer">
+                <div class="divMenu"></div>
+                <div class="divMenu"></div>
+                <div class="divMenu"></div>
+                <div class="divMenu"></div>
+            </div>
+            <ul>
+                <li class="menuItem">Servicios</li>
+                <li class="menuItem">Proyectos</li>
+                <li class="menuItem">Sobre Mí</li>
+                <li class="menuItem">Contacto</li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main class="container mt-2">
+        <section id="presentationPage">
+            <!-- <h1>Presentación</h1> -->
+            <div class="slider row">
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                    <button class="btn arrow-button" onclick="leftSlider()">
+                        <!-- <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-left-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                            <path fill-rule="evenodd" d="M8.354 11.354a.5.5 0 0 0 0-.708L5.707 8l2.647-2.646a.5.5 0 1 0-.708-.708l-3 3a.5.5 0 0 0 0 .708l3 3a.5.5 0 0 0 .708 0z"/>
+                            <path fill-rule="evenodd" d="M11.5 8a.5.5 0 0 0-.5-.5H6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 .5-.5z"/>
+                        </svg> -->
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+                        </svg>
+                    </button>
+                </div>
+                <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10">
+                    <ul>
+                        <li class="slider-img active"><img src="img/iconoRodri.jpeg"></li>
+                        <li class="slider-img"><img src="img/imagenProyecto.jpg"></li>
+                        <li class="slider-img"><img src="img/imagenProyecto2.png"></li>
+                        <li class="slider-img"><img src="img/imagenProyecto3.jpg"></li>
+                        <li class="slider-img"><img src="img/imagenProyecto4.jpg"></li>
+                    </ul>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1">
+                    <button class="btn arrow-button" onclick="rightSlider()">
+                        <!-- <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-arrow-right-square" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                            <path fill-rule="evenodd" d="M7.646 11.354a.5.5 0 0 1 0-.708L10.293 8 7.646 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0z"/>
+                            <path fill-rule="evenodd" d="M4.5 8a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5z"/>
+                        </svg> -->
+                        <svg width="2em" height="2em" viewBox="0 0 16 16" class="bi bi-chevron-right" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                        </svg>
+                    </button>
+                </div>
+                <!-- <div class="button-slider">
+                    <button class="btn left-button" onclick="leftSlider()">Imagen Izquierda</button>
+                    <button class="btn right-button" onclick="rightSlider()">Imagen Derecha</button>
+                </div> -->
+                <!-- <div class="button-proccess">
+                    <button class="btn stop-button" onclick="stopSlider()">Stop</button>
+                    <button class="btn start-button" onclick="startSlider()">Play</button>
+                </div> -->
+            </div>
+        </section>
+        <section id="servicios">
+            <!-- <h1>Servicios</h1> -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="card-service">
+                        <img class="logo-service" src="img/imagenProyecto4.jpg">
+                        <h2>Reformas</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit risus in felis accumsan dapibus.
+                            Pellentesque tincidunt nisi faucibus lectus pretium suscipit. Donec aliquam ligula non tempor bibendum. Nunc eget facilisis sem. Proin viverra mauris luctus libero hendrerit, 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="card-service">
+                        <img class="logo-service" src="img/tasacion2.jpg">
+                        <h2>Tasaciones</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit risus in felis accumsan dapibus.
+                            Pellentesque tincidunt nisi faucibus lectus pretium suscipit. Donec aliquam ligula non tempor bibendum. Nunc eget facilisis sem. Proin viverra mauris luctus libero hendrerit, 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="card-service">
+                        <img class="logo-service" src="img/certificaciones.jpg">
+                        <h2>Certificaciones</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit risus in felis accumsan dapibus.
+                            Pellentesque tincidunt nisi faucibus lectus pretium suscipit. Donec aliquam ligula non tempor bibendum. Nunc eget facilisis sem. Proin viverra mauris luctus libero hendrerit, 
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row mt-2">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="card-service">
+                        <img class="logo-service" src="img/iconoRodri.jpeg">
+                        <h2>Servicio 3</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit risus in felis accumsan dapibus.
+                            Pellentesque tincidunt nisi faucibus lectus pretium suscipit. Donec aliquam ligula non tempor bibendum. Nunc eget facilisis sem. Proin viverra mauris luctus libero hendrerit, 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="card-service">
+                        <img class="logo-service" src="img/iconoRodri.jpeg">
+                        <h2>Servicio 4</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit risus in felis accumsan dapibus.
+                            Pellentesque tincidunt nisi faucibus lectus pretium suscipit. Donec aliquam ligula non tempor bibendum. Nunc eget facilisis sem. Proin viverra mauris luctus libero hendrerit, 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="card-service">
+                        <img class="logo-service" src="img/iconoRodri.jpeg">
+                        <h2>Servicio 5</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit risus in felis accumsan dapibus.
+                            Pellentesque tincidunt nisi faucibus lectus pretium suscipit. Donec aliquam ligula non tempor bibendum. Nunc eget facilisis sem. Proin viverra mauris luctus libero hendrerit, 
+                        </p>
+                    </div>
+                </div>
+            </div> -->
+        </section>
+        <section id="proyectos">
+            <!-- <h1>Proyectos</h1> -->
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="card-project">
+                        <img class="logo-project" src="img/iconoRodri.jpeg">
+                        <div class="title-project">
+                            <h3>Proyecto 1</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="card-project">
+                        <img class="logo-project" src="img/imgRodri1.jpeg">
+                        <div class="title-project">
+                            <h3>Proyecto 2</h3>
+                        </div>
+                    </div> 
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                    <div class="card-project">
+                        <img class="logo-project" src="img/imgRodri2.jpeg">
+                        <div class="title-project">
+                            <h3>Proyecto 3</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="proyecto">
+            <div class="row project">
+                <button onclick="comeBackProject()">Come Back</button>
+
+            </div>
+        </section>
+        <section id="sobreMi">
+            <!-- <h1>Sobre Mí</h1> -->
+            <div class="row container-personal">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <h2>Rodrigo Ochoa Barcelo</h2>
+                    <h3>Arquitécto Técnico</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur blandit risus in felis accumsan dapibus. Pellentesque tincidunt nisi faucibus lectus pretium suscipit. Donec aliquam ligula non tempor bibendum. Nunc eget facilisis sem. Proin viverra mauris luctus libero hendrerit, gravida facilisis magna sodales. Curabitur tincidunt hendrerit nisi vitae sagittis. Morbi ultrices eleifend enim at fringilla. In sit amet semper ante. Ut eget purus hendrerit arcu faucibus volutpat quis et tellus. Morbi et augue lacus. Phasellus non iaculis velit. Fusce interdum ante quis mauris ultricies, in feugiat sem euismod.
+
+                            Ut orci nibh, maximus eu convallis in, laoreet nec orci. Vestibulum gravida bibendum est, sed posuere tellus varius quis. Mauris et luctus mauris. Sed sollicitudin faucibus mattis. Duis aliquam lectus quam, in vulputate mi gravida ut. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Nam eu neque a dolor pretium mattis. Sed viverra libero sit amet risus pellentesque, sit amet accumsan lacus euismod. Ut ipsum libero, bibendum quis euismod vitae, euismod id nulla. Donec at nulla eget velit molestie tempor.</p>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <img src="img/rodriStyle.jpeg" height="450">
+                </div>
+            </div>
+        </section>
+        <section id="contacto">
+            <!-- <h1>Contacto</h1> -->
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <form action="envioMail.php" method="POST" enctype="text/plain">
+                        <div class="col-md-6">
+                            <label>Nombre:</label>
+                            <input type="text" name="nombre">
+                            <label>Apellidos:</label>
+                            <input type="text" name="apellidos">
+                            <label>Comentarios:</label>
+                            <textarea name="comentarios">Escribe...</textarea>
+                            <label>Correo Electrónico:</label>
+                            <input type="email" name="mail">
+                            <input class="mt-2" type="submit" value="Enviar formulario">
+                        </div>
+                        <!-- <a target="_top" href="mailto:antonio.herrero1991@gmail.com">Clicka para enviar email a un destinatario</a> -->
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12483.708420038762!2d-0.8306883638865881!3d38.53544847404781!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd63db8f9b7b1c05%3A0x603e94b9cf6d35d4!2s03630%20Sax%2C%20Alicante!5e0!3m2!1ses!2ses!4v1594028046698!5m2!1ses!2ses" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>Rodrigo Ochoa Barceló</p>
+            <p>C/Falsa, 123</p>
+        </div>
+    </footer>
+    
+    <script src="rodriScripts.js"></script>
+</body>
+</html>
